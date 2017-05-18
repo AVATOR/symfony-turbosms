@@ -1,0 +1,28 @@
+{
+  "name": "avator/yii2-turbosms/settingsbundle",
+  "description": "Symfony2/3 send sms from Turbosms.ua by SOAP Edit",
+  "type": "symfony-bundle",
+  "homepage": "https://github.com/AVATOR/symfony-turbosms",
+  "license": "BSD-3-Clause",
+  "keywords": [ "symfony","bundle","symfony turbosms","sms" ],
+  "authors": [
+    {
+      "name": "Oleksii Golub",
+      "email": "sclub2018@yandex.ua"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "symfony/symfony": ">=2.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "AVATOR\\TurbosmsBundle\\": ""
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    }
+  }
+}

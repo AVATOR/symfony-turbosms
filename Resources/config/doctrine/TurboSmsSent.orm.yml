@@ -1,0 +1,49 @@
+AVATOR\TurbosmsBundle\Entity\TurboSmsSent:
+    type:  entity
+    table: avator_turbo_sms_sent
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    indexes:
+        phone:
+          columns: [ phone ]
+        status:
+          columns: [ status ]
+        created_at:
+          columns: [ created_at ]
+    fields:
+        phone:
+            type: string
+            length: 100
+            options:
+                default: ''
+        message_id:
+            type: string
+            length: 250
+            options:
+                default: ''
+        status:
+            type: string
+            length: 50
+            options:
+                default: ''
+        status_message:
+            type: string
+            length: 250
+            options:
+                default: ''
+        message:
+            type: text
+            options:
+                default: ''
+
+        created_at:
+            type: datetime
+        updated_at:
+            type: datetime
+
+    lifecycleCallbacks:
+        prePersist: [ onInsert ]
+        preUpdate: [ onUpdate ]

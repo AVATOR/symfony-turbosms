@@ -1,0 +1,7 @@
+services:
+    turbosms:
+        alias: avator_turbosms.turbosms
+
+    avator_turbosms.turbosms:
+        class: AVATOR\TurbosmsBundle\Service\Turbosms
+        arguments: ["@doctrine.orm.entity_manager", "@translator", "@service_container"]
