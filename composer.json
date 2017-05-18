@@ -1,5 +1,5 @@
 {
-  "name": "avator/yii2-turbosms/settingsbundle",
+  "name": "avator/symfony-turbosms",
   "description": "Symfony2/3 send sms from Turbosms.ua by SOAP Edit",
   "type": "symfony-bundle",
   "homepage": "https://github.com/AVATOR/symfony-turbosms",
@@ -8,7 +8,7 @@
   "authors": [
     {
       "name": "Oleksii Golub",
-      "email": "sclub2018@yandex.ua"
+      "email": "oleksii.v.golub@gmail.com"
     }
   ],
   "require": {
